@@ -1,5 +1,7 @@
 {
-  "name": "ionic4-angular-cordova-testbed",
-  "integrations": {},
+  "name": "com.sebastienguillon.ionic4-angular-cordova-testbed",
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
