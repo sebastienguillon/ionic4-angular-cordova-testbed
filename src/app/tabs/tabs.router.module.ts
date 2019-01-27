@@ -8,42 +8,54 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
+        path: 'home',
         children: [
           {
             path: '',
-            loadChildren: '../tab1/tab1.module#Tab1PageModule'
+            loadChildren: '../pages/home/home.module#HomePageModule'
           }
         ]
       },
       {
-        path: 'tab2',
+        path: 'ionic',
         children: [
           {
             path: '',
-            loadChildren: '../tab2/tab2.module#Tab2PageModule'
+            loadChildren: '../pages/ionic-demos/ionic-demos.module#IonicDemosPageModule'
+          },
+          {
+            path: 'ion-grid',
+            loadChildren: '../pages/ionic-demos/ion-grid/ion-grid.module#IonGridPageModule'
+          },
+          {
+            path: 'ion-ripple-effect',
+            loadChildren: '../pages/ionic-demos/ion-ripple-effect/ion-ripple-effect.module#IonRippleEffectPageModule'
           }
         ]
       },
       {
-        path: 'tab3',
+        path: 'angular',
         children: [
           {
             path: '',
-            loadChildren: '../tab3/tab3.module#Tab3PageModule'
+            loadChildren: '../pages/angular-demos/angular-demos.module#AngularDemosPageModule'
           }
         ]
       },
       {
-        path: '',
-        redirectTo: '/tabs/tab1',
-        pathMatch: 'full'
+        path: 'native',
+        children: [
+          {
+            path: '',
+            loadChildren: '../pages/native-demos/native-demos.module#NativeDemosPageModule'
+          }
+        ]
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/home',
     pathMatch: 'full'
   }
 ];
