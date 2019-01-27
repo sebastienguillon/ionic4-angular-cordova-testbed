@@ -48,6 +48,10 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: '../pages/native-demos/native-demos.module#NativeDemosPageModule'
+          },
+          {
+            path: 'status-bar',
+            loadChildren: '../pages/native-demos/status-bar/status-bar.module#StatusBarPageModule'
           }
         ]
       }

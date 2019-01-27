@@ -10,7 +10,8 @@ const routes: Routes = [
     path: '**',
     loadChildren: './pages/error/error.module#ErrorPageModule',
     pathMatch: 'full'
-  }
+  },  { path: 'status-bar', loadChildren: './pages/native-demos/status-bar/status-bar.module#StatusBarPageModule' }
+
 ];
 @NgModule({
   imports: [

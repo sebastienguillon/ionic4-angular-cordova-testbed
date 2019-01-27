@@ -1,24 +1,26 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ErrorPage } from './error.page';
+import { StatusBarPage } from './status-bar.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: ErrorPage
+    component: StatusBarPage
   }
 ];
 
 @NgModule({
   imports: [
     CommonModule,
+    FormsModule,
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [ErrorPage]
+  declarations: [StatusBarPage]
 })
-export class ErrorPageModule {}
+export class StatusBarPageModule {}

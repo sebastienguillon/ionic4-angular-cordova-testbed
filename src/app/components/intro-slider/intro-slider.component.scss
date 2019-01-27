@@ -1,0 +1,24 @@
+ion-slides {
+  width: 100%;
+  height: 100%;
+  --bullet-background: var(--ion-color-dark);
+  --bullet-background-active: var(--ion-color-danger);
+
+  ion-slide {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    flex-direction: column;
+  }
+}
+
+ion-img {
+  $size: 66vmin;
+  &.logo {
+    &.angular,
+    &.cordova,
+    &.ionic {
+      width: $size;
+      height: $size;
+    }
+  }
+}

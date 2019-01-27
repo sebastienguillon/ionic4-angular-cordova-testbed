@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
 import { HomePage } from './home.page';
+import { IntroSliderComponent } from 'src/app/components/intro-slider/intro-slider.component';
 
 const routes: Routes = [
   {
@@ -17,10 +17,12 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [HomePage]
+  declarations: [
+    IntroSliderComponent,
+    HomePage
+  ]
 })
 export class HomePageModule {}
