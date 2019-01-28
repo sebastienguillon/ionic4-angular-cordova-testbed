@@ -30,6 +30,10 @@ const routes: Routes = [
           {
             path: 'ion-ripple-effect',
             loadChildren: '../pages/ionic-demos/ion-ripple-effect/ion-ripple-effect.module#IonRippleEffectPageModule'
+          },
+          {
+            path: 'ion-slides',
+            loadChildren: '../pages/ionic-demos/ion-slides/ion-slides.module#IonSlidesPageModule'
           }
         ]
       },

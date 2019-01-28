@@ -4,12 +4,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HomePage } from './home.page';
+import { IonSlidesPage } from './ion-slides.page';
+
+import { IntroSliderComponent } from 'src/app/components/intro-slider/intro-slider.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomePage
+    component: IonSlidesPage
   }
 ];
 
@@ -20,7 +22,8 @@ const routes: Routes = [
     RouterModule.forChild(routes)
   ],
   declarations: [
-    HomePage
+    IonSlidesPage,
+    IntroSliderComponent,
   ]
 })
-export class HomePageModule {}
+export class IonSlidesPageModule {}

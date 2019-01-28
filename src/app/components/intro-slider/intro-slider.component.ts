@@ -12,12 +12,19 @@ export class IntroSliderComponent implements OnInit {
       el: '.swiper-pagination',
       type: 'custom',
       renderCustom: (swiper, current, total) => {
-        console.log(swiper, current, total);
-        console.log(swiper.pagination.$el[0].innerHTML);
-          return swiper.pagination.$el[0].innerHTML;
+        let bullets = '';
+        for (let i = 1; i <= total; i++) {
+          const activeClass = (current === i) ? ' swiper-pagination-bullet-active' : '';
+          bullets += `<span class="swiper-pagination-bullet${activeClass}"></span> `;
+        }
+        return `
+          <div class="swiper-pagination swiper-pagination-bullets" style="width:100%;bottom:40px;">
+            ${bullets}
+          </span></div>
+        `;
       }
     },
-    spaceBetween: 30,
+    spaceBetween: 0,
   };
 
   constructor() { }

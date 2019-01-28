@@ -12,7 +12,8 @@ const routes: Routes = [
     pathMatch: 'full'
   },  { path: 'status-bar', loadChildren: './pages/native-demos/status-bar/status-bar.module#StatusBarPageModule' },
   { path: 'stencil-demos', loadChildren: './pages/angular-demos/stencil-demos/stencil-demos.module#StencilDemosPageModule' },
-  { path: 'stencil-basic', loadChildren: './pages/angular-demos/stencil-basic/stencil-basic.module#StencilBasicPageModule' }
+  { path: 'stencil-basic', loadChildren: './pages/angular-demos/stencil-basic/stencil-basic.module#StencilBasicPageModule' },
+  { path: 'ion-slides', loadChildren: './pages/ionic-demos/ion-slides/ion-slides.module#IonSlidesPageModule' }
 
 ];
 @NgModule({
