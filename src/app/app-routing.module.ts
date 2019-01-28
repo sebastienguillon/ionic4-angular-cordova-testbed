@@ -10,7 +10,9 @@ const routes: Routes = [
     path: '**',
     loadChildren: './pages/error/error.module#ErrorPageModule',
     pathMatch: 'full'
-  },  { path: 'status-bar', loadChildren: './pages/native-demos/status-bar/status-bar.module#StatusBarPageModule' }
+  },  { path: 'status-bar', loadChildren: './pages/native-demos/status-bar/status-bar.module#StatusBarPageModule' },
+  { path: 'stencil-demos', loadChildren: './pages/angular-demos/stencil-demos/stencil-demos.module#StencilDemosPageModule' },
+  { path: 'stencil-basic', loadChildren: './pages/angular-demos/stencil-basic/stencil-basic.module#StencilBasicPageModule' }
 
 ];
 @NgModule({

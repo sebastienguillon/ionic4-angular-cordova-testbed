@@ -39,6 +39,14 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: '../pages/angular-demos/angular-demos.module#AngularDemosPageModule'
+          },
+          {
+            path: 'stencil',
+            loadChildren: '../pages/angular-demos/stencil-demos/stencil-demos.module#StencilDemosPageModule'
+          },
+          {
+            path: 'stencil/basic',
+            loadChildren: '../pages/angular-demos/stencil-basic/stencil-basic.module#StencilBasicPageModule'
           }
         ]
       },

@@ -8,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class IntroSliderComponent implements OnInit {
   showPager = true;
   slideOpts = {
-    effect: 'cube',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'custom',
+      renderCustom: (swiper, current, total) => {
+        console.log(swiper, current, total);
+        console.log(swiper.pagination.$el[0].innerHTML);
+          return swiper.pagination.$el[0].innerHTML;
+      }
+    },
     spaceBetween: 30,
   };
 
